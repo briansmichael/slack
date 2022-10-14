@@ -39,6 +39,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.starfireaviation</groupId>
+			<artifactId>model</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
 			<groupId>com.ullink.slack</groupId>
 			<artifactId>simpleslackapi</artifactId>
 			<version>1.2.0</version>

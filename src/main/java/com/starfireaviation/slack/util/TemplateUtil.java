@@ -17,12 +17,12 @@
 package com.starfireaviation.slack.util;
 
 import com.starfireaviation.slack.config.ApplicationProperties;
-import com.starfireaviation.slack.model.Address;
-import com.starfireaviation.slack.model.Answer;
-import com.starfireaviation.slack.model.Event;
-import com.starfireaviation.slack.model.Question;
-import com.starfireaviation.slack.model.ReferenceMaterial;
-import com.starfireaviation.slack.model.User;
+import com.starfireaviation.model.Address;
+import com.starfireaviation.model.Answer;
+import com.starfireaviation.model.Event;
+import com.starfireaviation.model.Question;
+import com.starfireaviation.model.ReferenceMaterial;
+import com.starfireaviation.model.User;
 
 import java.text.SimpleDateFormat;
 import java.time.OffsetDateTime;

@@ -16,7 +16,7 @@
 
 package com.starfireaviation.slack.util;
 
-import com.starfireaviation.slack.model.ResponseOption;
+import com.starfireaviation.model.ResponseOption;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
