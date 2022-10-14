@@ -14,16 +14,23 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.model;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+/**
+ * QuizType.
+ */
+public enum QuizType {
 
-@SpringBootTest
-class SlackApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+    /**
+     * EXAM.
+     */
+    EXAM,
+    /**
+     * INFORMAL.
+     */
+    INFORMAL,
+    /**
+     * FORMAL.
+     */
+    FORMAL;
 }

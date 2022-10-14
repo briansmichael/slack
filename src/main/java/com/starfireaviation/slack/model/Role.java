@@ -14,16 +14,23 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.model;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+/**
+ * Role.
+ */
+public enum Role {
 
-@SpringBootTest
-class SlackApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+    /**
+     * ADMIN.
+     */
+    ADMIN,
+    /**
+     * INSTRUCTOR.
+     */
+    INSTRUCTOR,
+    /**
+     * STUDENT.
+     */
+    STUDENT
 }

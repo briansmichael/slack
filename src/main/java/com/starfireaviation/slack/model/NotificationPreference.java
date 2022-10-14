@@ -14,16 +14,27 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.model;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+/**
+ * NotificationPreference.
+ */
+public enum NotificationPreference {
 
-@SpringBootTest
-class SlackApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+    /**
+     * WEB.
+     */
+    WEB,
+    /**
+     * EMAIL.
+     */
+    EMAIL,
+    /**
+     * SMS.
+     */
+    SMS,
+    /**
+     * SLACK.
+     */
+    SLACK
 }

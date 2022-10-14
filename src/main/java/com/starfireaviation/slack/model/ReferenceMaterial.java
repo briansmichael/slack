@@ -14,16 +14,31 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.model;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import lombok.Data;
 
-@SpringBootTest
-class SlackApplicationTests {
+import java.io.Serializable;
 
-	@Test
-	void contextLoads() {
-	}
+/**
+ * ReferenceMaterial.
+ */
+@Data
+public class ReferenceMaterial implements Serializable {
+
+    /**
+     * Default SerialVersionUID.
+     */
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * Title.
+     */
+    private String title;
+
+    /**
+     * URL.
+     */
+    private String resourceLocation;
 
 }

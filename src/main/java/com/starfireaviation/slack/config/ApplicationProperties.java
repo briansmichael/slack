@@ -14,16 +14,28 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.config;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@SpringBootTest
-class SlackApplicationTests {
+@Data
+@ConfigurationProperties("slack")
+public class ApplicationProperties {
 
-	@Test
-	void contextLoads() {
-	}
+    /**
+     * Slack BOT Token.
+     */
+    private String token;
+
+    /**
+     * Slack GroundSchool Channel.
+     */
+    private String groundSchoolChannel;
+
+    /**
+     * Slack enabled.
+     */
+    private boolean enabled;
 
 }

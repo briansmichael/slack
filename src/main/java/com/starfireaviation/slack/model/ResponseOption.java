@@ -14,16 +14,47 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.model;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+/**
+ * ResponseOption.
+ */
+public enum ResponseOption {
 
-@SpringBootTest
-class SlackApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+    /**
+     * UNKNOWN.
+     */
+    UNKNOWN,
+    /**
+     * A.
+     */
+    A,
+    /**
+     * B.
+     */
+    B,
+    /**
+     * C.
+     */
+    C,
+    /**
+     * D.
+     */
+    D,
+    /**
+     * SKIP.
+     */
+    SKIP,
+    /**
+     * STOP.
+     */
+    STOP,
+    /**
+     * CONFIRM.
+     */
+    CONFIRM,
+    /**
+     * DECLINE.
+     */
+    DECLINE;
 }

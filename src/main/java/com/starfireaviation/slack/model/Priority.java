@@ -14,16 +14,20 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.model;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+public enum Priority {
 
-@SpringBootTest
-class SlackApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+    /**
+     * High.
+     */
+    HIGH,
+    /**
+     * Normal.
+     */
+    NORMAL,
+    /**
+     * Low.
+     */
+    LOW
 }

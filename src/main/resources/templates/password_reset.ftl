@@ -1,0 +1,1 @@
+Go to ${hostui}/passwordreset?code=${code}&userId=${userId} and enter {code} to reset your password.  If you did not make this request, you may ignore this websocketMessage.

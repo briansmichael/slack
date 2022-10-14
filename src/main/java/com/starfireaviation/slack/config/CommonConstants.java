@@ -14,16 +14,17 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack;
+package com.starfireaviation.slack.config;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+public class CommonConstants {
 
-@SpringBootTest
-class SlackApplicationTests {
+    /**
+     * Default organization.
+     */
+    public static final String DEFAULT_ORGANIZATION = "default";
 
-	@Test
-	void contextLoads() {
-	}
-
+    /**
+     * Maximium Queue Size.
+     */
+    public static final int MAX_QUEUE_SIZE = 10000;
 }
