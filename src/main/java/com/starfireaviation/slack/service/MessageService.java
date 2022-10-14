@@ -31,7 +31,6 @@ import com.starfireaviation.slack.util.TemplateUtil;
 import com.starfireaviation.slack.validation.ResponseValidator;
 import freemarker.template.TemplateException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
 
 import com.ullink.slack.simpleslackapi.SlackChannel;
 import com.ullink.slack.simpleslackapi.SlackSession;
@@ -43,10 +42,9 @@ import freemarker.template.Configuration;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
 /**
- * SlackService.
+ * MessageService.
  */
 @Slf4j
-@Service("gsSlackService")
 public class MessageService implements SlackMessagePostedListener {
 
     /**
