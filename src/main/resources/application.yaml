@@ -1,1 +1,4 @@
-
+slack:
+  enabled: false
+  token: ABC123
+  groundSchoolChannel: groundschool

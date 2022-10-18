@@ -14,37 +14,50 @@
  *  limitations under the License.
  */
 
-package com.starfireaviation.slack.config;
+package com.starfireaviation.slack;
 
-public class CommonConstants {
+import com.starfireaviation.model.Message;
+import lombok.Data;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
-    /**
-     * Organization Header Key.
-     */
-    public static final String ORGANIZATION_HEADER_KEY = "organization";
-
-    /**
-     * Default organization.
-     */
-    public static final String DEFAULT_ORGANIZATION = "StarfireAviation";
+@Component
+@Data
+public class TestContext {
 
     /**
-     * ClientID Header Key.
+     * Message.
      */
-    public static final String CLIENT_ID_HEADER_KEY = "client-id";
+    private Message message;
 
     /**
-     * Slack Client ID.
+     * Response.
      */
-    public static final String SLACK_CLIENT_ID = "SLACK";
+    private ResponseEntity<?> response;
 
     /**
-     * CorrelationID Header Key.
+     * Organization.
      */
-    public static final String CORRELATION_ID_HEADER_KEY = "correlation-id";
+    private String organization;
 
     /**
-     * ONE_THOUSAND.
+     * CorrelationID.
      */
-    public static final int ONE_THOUSAND = 1000;
+    private String correlationId;
+
+    /**
+     * ClientID.
+     */
+    private String clientId;
+
+    /**
+     * Resets attributes values to their defaults.
+     */
+    public void reset() {
+        message = null;
+        response = null;
+        organization = null;
+        correlationId = null;
+        clientId = null;
+    }
 }
