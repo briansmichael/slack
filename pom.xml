@@ -41,12 +41,12 @@
 		<dependency>
 			<groupId>com.starfireaviation</groupId>
 			<artifactId>model</artifactId>
-			<version>0.0.1</version>
+			<version>0.0.4</version>
 		</dependency>
 		<dependency>
-			<groupId>com.ullink.slack</groupId>
-			<artifactId>simpleslackapi</artifactId>
-			<version>1.2.0</version>
+			<groupId>com.slack.api</groupId>
+			<artifactId>slack-api-client</artifactId>
+			<version>1.26.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>

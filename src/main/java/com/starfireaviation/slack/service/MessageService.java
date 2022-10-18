@@ -32,12 +32,6 @@ import com.starfireaviation.slack.validation.ResponseValidator;
 import freemarker.template.TemplateException;
 import lombok.extern.slf4j.Slf4j;
 
-import com.ullink.slack.simpleslackapi.SlackChannel;
-import com.ullink.slack.simpleslackapi.SlackSession;
-import com.ullink.slack.simpleslackapi.events.SlackMessagePosted;
-import com.ullink.slack.simpleslackapi.impl.SlackSessionFactory;
-import com.ullink.slack.simpleslackapi.listeners.SlackMessagePostedListener;
-
 import freemarker.template.Configuration;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
@@ -45,7 +39,7 @@ import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
  * MessageService.
  */
 @Slf4j
-public class MessageService implements SlackMessagePostedListener {
+public class MessageService {
 
     /**
      * TEMPLATE_LOCATION.
@@ -61,11 +55,6 @@ public class MessageService implements SlackMessagePostedListener {
      * FreeMarker Configuration.
      */
     private final Configuration freemarkerConfig;
-
-    /**
-     * SlackSession.
-     */
-    private SlackSession slackSession = null;
 
     public MessageService(final ApplicationProperties aProps,
                           final Configuration config) {
